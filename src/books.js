@@ -102,15 +102,17 @@ console.log(getBookDetails(booksArray[3]));
 
 // Iteration 4 | Estimated Reading Time
 
+  
+  booksArray.forEach(element => { 
+    element.readingTime = (element.pages * 500) / 90; 
+    element.readingTime = Math.ceil(element);
+    console.log(booksArray); 
+    });
 
 
 
 
 // Bonus: Iteration 5 | Books Dictionary 
-
-
-
-
 
 /* The `dictionary` is an object containing books grouped by author. 
  The book info is stored in arrays with structure: [title, pages]. 
