@@ -87,14 +87,30 @@ function getBookDetails(book) {
   return `${book.title} - ${book.author} - ${book.pages} pages`;
 }
 console.log(getBookDetails(booksArray[3]));
+ 
+
 
 // Iteration 3 | Delete Language
-// Your code here:
+
+
+  booksArray.forEach(element => { 
+    delete element.details.language; 
+  });
+
+  console.log(booksArray); 
+
 
 // Iteration 4 | Estimated Reading Time
-// Your code here:
 
-// Bonus: Iteration 5 | Books Dictionary
+
+
+
+
+// Bonus: Iteration 5 | Books Dictionary 
+
+
+
+
 
 /* The `dictionary` is an object containing books grouped by author. 
  The book info is stored in arrays with structure: [title, pages]. 
